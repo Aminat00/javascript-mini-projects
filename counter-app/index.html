@@ -5,23 +5,24 @@
      
     </head>
     <body>
+       
         <div class="container">
         <div class="home-box">
             <h1>HOME</h1>
-                <input type="number" value="3" readonly />
+                <input type="number" name="displayHomeVal" id="homeVal" value=0 disabled />
             <div class="button-row">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
+                <button onclick="Add1()">+1</button>
+                <button onclick="Add2()">+2</button>
+                <button onclick="Add3()">+3</button>
             </div>
         </div>
         <div class="guest-box">
              <h1>GUEST</h1>
-            <input type="number" value="3" readonly/>
+            <input type="number" id="guestVal" value=0 disabled />
             <div class="button-row">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
+                <button onclick="AddG1()">+1</button>
+                <button onclick="AddG2()">+2</button>
+                <button onclick="AddG3()">+3</button>
             </div>
         </div>
         </div>
