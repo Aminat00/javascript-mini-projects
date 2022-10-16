@@ -107,10 +107,7 @@ function generate() {
 	}
 	for (let i = 0; i < 15; i++) {
 		passwordFirst = characters[Math.floor(Math.random() * characters.length)];
-		console.log(passwordOne.value);
-		fullText += passwordFirst;
 		passwordOne.value += passwordFirst;
-		console.log(` The ${i} passwordOne.value = ${passwordOne.value}`);
 	}
 
 	if (passwordTwo.value != '') {
@@ -119,7 +116,30 @@ function generate() {
 
 	for (let j = 0; j < 15; j++) {
 		passwordSec = characters[Math.floor(Math.random() * characters.length)];
-		console.log(passwordTwo.value);
 		passwordTwo.value += passwordSec;
+	}
+}
+
+let passwordA = document.getElementById('passwordA');
+let passwordB = document.getElementById('passwordB');
+let passwordAA = '';
+let passwordBB = '';
+
+function generateWhite() {
+	if (passwordA.value != '') {
+		passwordA.value = '';
+	}
+	for (let i = 0; i < 15; i++) {
+		passwordAA = characters[Math.floor(Math.random() * characters.length)];
+		passwordA.value += passwordAA;
+	}
+
+	if (passwordB.value != '') {
+		passwordB.value = '';
+	}
+
+	for (let j = 0; j < 15; j++) {
+		passwordBB = characters[Math.floor(Math.random() * characters.length)];
+		passwordB.value += passwordBB;
 	}
 }
