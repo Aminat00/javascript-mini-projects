@@ -1,3 +1,3 @@
 # javascript-mini-projects
 
-Mini js projects to practse and master javascript
+Mini but cool js prijects for showcase
